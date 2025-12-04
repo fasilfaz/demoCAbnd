@@ -1,5 +1,6 @@
 const WebSocket = require('ws');
 const jwt = require('jsonwebtoken');
+require("dotenv").config();
 
 let wss = null;
 
