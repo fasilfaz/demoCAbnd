@@ -36,7 +36,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://api-ca-erp.xyvin.com', 'https://ca-erp.xyvin.com'],
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://demo-c-afrd.vercel.app', 'https://demo-c-abnd.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
