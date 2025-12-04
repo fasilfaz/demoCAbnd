@@ -9,9 +9,8 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    autoAbsent.start();
-    updateCasualLeaveCount.start();
-    remindDuetask.start()
+    // Do NOT start cron jobs here. Cron jobs should be initialized
+    // only by the persistent server process (see services/cronService.js).
     logger.info(`MongoDB Connected: ${conn.connection.host}`);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
