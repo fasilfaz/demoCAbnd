@@ -1,0 +1,47 @@
+{
+  "name": "ca-erp-backend",
+  "version": "1.0.0",
+  "description": "Backend for CA-ERP system",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "seed:superadmin": "node src/utils/seedSuperAdmin.js",
+    "test:superadmin": "node test-superadmin-check.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.855.0",
+    "axios": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "ca-erp-backend": "file:",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.1.5",
+    "hpp": "^0.2.3",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.48",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "winston": "^3.8.2",
+    "ws": "^8.18.2",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
